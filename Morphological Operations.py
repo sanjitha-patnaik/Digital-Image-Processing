@@ -1,4 +1,5 @@
 #EROSION
+#Erosion is a morphological operation that shrinks or erodes the boundaries of objects in a binary image by removing pixels based on the defined structuring element.
 import cv2
 import numpy as np
 from matplotlib import pyplot as plt
@@ -10,7 +11,9 @@ plt.subplot(122), plt.imshow(erosion_result, cmap='gray'), plt.title('Eroded')
 plt.show()
 
 
-#Dilation
+#DILATION
+#Dilation is a morphological operation that expands or dilates the boundaries of objects in a binary image by adding pixels based on the defined structuring element.
+
 import cv2
 import numpy as np
 from matplotlib import pyplot as plt
@@ -26,7 +29,9 @@ plt.subplot(122), plt.imshow(dilation_result, cmap='gray'), plt.title('Dilated')
 plt.show()
 
 
-#Opening
+#OPENING
+#Opening is a morphological operation that combines an erosion operation followed by a dilation operation, useful for removing noise and small objects while preserving the structural integrity of larger objects in a binary image.
+
 import cv2
 import numpy as np
 from matplotlib import pyplot as plt
@@ -42,7 +47,8 @@ plt.subplot(122), plt.imshow(opening_result, cmap='gray'), plt.title('Opened')
 plt.show()
 
 
-# Closing
+# CLOSING
+#Closing is a morphological operation that combines a dilation operation followed by an erosion operation, effective in closing small gaps and filling holes in objects within a binary image.
 import cv2
 import numpy as np
 from matplotlib import pyplot as plt
@@ -58,7 +64,9 @@ plt.subplot(122), plt.imshow(closing_result, cmap='gray'), plt.title('Closed')
 plt.show()
 
 
-#Boundary Extraction
+#BOUNDARY EXTRACTION
+#Boundary extraction is a process that involves highlighting the edges or boundaries of objects in an image by subtracting a morphologically eroded version of the image from the original, emphasizing the object contours.
+
 import cv2
 import numpy as np
 from matplotlib import pyplot as plt
@@ -77,7 +85,9 @@ plt.subplot(133), plt.imshow(boundary_result, cmap='gray'), plt.title('Boundary'
 plt.show()
 
 
-#Hit And Miss Transform
+#HIT AND MISS TRANSFORM
+#Hit-and-Miss transform is a morphological operation used for precise pattern matching in binary images by applying both foreground and background structuring elements to identify specific configurations or features.
+
 import cv2
 import numpy as np
 from matplotlib import pyplot as plt
@@ -95,7 +105,7 @@ plt.subplot(122), plt.imshow(hit_miss_result, cmap='gray'), plt.title('Hit-or-Mi
 plt.show()
 
 
-/b#Hole filling/b
+#HOLE FILLING
 #Hole filling is a morphological operation that involves using dilation to fill small gaps or holes in objects within a binary image, resulting in a more connected and complete representation
 
 import cv2
