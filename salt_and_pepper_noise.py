@@ -1,3 +1,4 @@
+#Salt and Pepper noise
 import cv2
 import numpy as np
 def add_salt_and_pepper_noise(image, salt_prob, pepper_prob):
